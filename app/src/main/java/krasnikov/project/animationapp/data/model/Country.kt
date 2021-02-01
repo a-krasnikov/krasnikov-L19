@@ -8,7 +8,9 @@ class Country(
     @SerializedName("population")
     val population: Int,
     @SerializedName("area")
-    val area: Double
+    val area: Double,
+    @SerializedName("flag")
+    val flag: String
 ) {
     val populationDensity
         get() = population / area

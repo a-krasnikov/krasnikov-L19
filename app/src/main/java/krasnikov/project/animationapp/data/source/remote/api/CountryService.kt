@@ -1,4 +1,4 @@
-package krasnikov.project.animationapp.data.remote.api
+package krasnikov.project.animationapp.data.source.remote.api
 
 import krasnikov.project.animationapp.data.model.Country
 import retrofit2.Call

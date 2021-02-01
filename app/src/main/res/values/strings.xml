@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AnimationApp</string>
+    <string name="transition_icon">flag_%s</string>
+    <string name="transition_text">name_%s</string>
+    <string name="text_area">Area: %.2f km2</string>
+    <string name="text_population">Population: %d</string>
+    <string name="text_population_density">Density: %.2f/km2</string>
 </resources>

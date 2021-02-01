@@ -1,11 +1,12 @@
-package krasnikov.project.animationapp
+package krasnikov.project.animationapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import krasnikov.project.animationapp.R
 
-class CountryInfoActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_country_info)
+        setContentView(R.layout.activity_main)
     }
 }

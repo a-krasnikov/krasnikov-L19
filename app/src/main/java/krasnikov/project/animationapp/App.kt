@@ -1,9 +1,9 @@
 package krasnikov.project.animationapp
 
 import android.app.Application
-import krasnikov.project.animationapp.data.remote.CountryRemoteDataSource
-import krasnikov.project.animationapp.data.remote.api.CountryService
-import krasnikov.project.animationapp.data.repository.CountryRepository
+import krasnikov.project.animationapp.data.source.remote.CountryRemoteDataSource
+import krasnikov.project.animationapp.data.source.remote.api.CountryService
+import krasnikov.project.animationapp.data.source.repository.CountryRepository
 
 class App : Application() {
     private val countryService by lazy { CountryService.provideCountryService() }

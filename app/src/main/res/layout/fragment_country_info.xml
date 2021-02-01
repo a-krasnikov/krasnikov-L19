@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/screen_padding"
+    tools:context=".ui.country.CountryInfoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.caverock.androidsvg.SVGImageView
+            android:id="@+id/ivFlag"
+            android:layout_width="@dimen/activity_icon_size"
+            android:layout_height="@dimen/activity_icon_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/text_padding"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            app:layout_constraintBottom_toBottomOf="@+id/ivFlag"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivFlag"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Ukraine" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvArea"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="@dimen/default_margin"
+            android:drawablePadding="@dimen/text_padding"
+            android:gravity="left|center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            app:drawableLeftCompat="@drawable/ic_area"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivFlag"
+            tools:text="1213" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPopulation"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="@dimen/default_margin"
+            android:drawablePadding="@dimen/text_padding"
+            android:gravity="left|center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            app:drawableLeftCompat="@drawable/ic_population"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvArea"
+            tools:text="1213" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPopulationDensity"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="@dimen/default_margin"
+            android:drawablePadding="@dimen/text_padding"
+            android:gravity="left|center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+            app:drawableLeftCompat="@drawable/ic_crowd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPopulation"
+            tools:text="1213" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
